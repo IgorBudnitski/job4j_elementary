@@ -13,7 +13,7 @@ package ru.job4j.condition.exercises;
 превышает цену игры, метод вернул разницу между этими величинами (т.е. чистую прибыль), или вернул 0 (при условии что
 чистая прибыль меньше или равна 0).
  */
-public class Game {
+    public class Game {
     public static int checkGame(double percent, int prize, int pay) {
         return (percent * prize) > pay ? (int) (percent * prize) - pay : 0;
     }
