@@ -30,4 +30,12 @@ public class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, pref);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void whenNotStartWithPrefixThenFalse11() {
+        char[] word = {'H', 'e', 'l', 'l', 'o'};
+        char[] pref = {'f', 'e', 'l'};
+        boolean result = ArrayChar.startsWith(word, pref);
+        Assert.assertFalse(result);
+    }
 }
