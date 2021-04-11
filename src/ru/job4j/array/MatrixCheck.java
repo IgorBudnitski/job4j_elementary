@@ -30,4 +30,18 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    // in iff statement can be used also
+    // (monoHorizontal(board, index) || monoVertical(board, index))
+
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int index = 0; index < board.length; index++) {
+            if (board[index][index] == 'X') {
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
 }
