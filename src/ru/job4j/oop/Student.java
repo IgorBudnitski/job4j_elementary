@@ -6,17 +6,18 @@ public class Student {
         System.out.println("tra tra tra");
     }
 
-    public void song() {
-        System.out.println("I believe I can fly!");
+    public void song(String lyrics) {
+        System.out.println("I can sing a song: " + lyrics);
     }
 
     public static void main(String[] args) {
         Student igor = new Student();
+        String song = "I belive I can fly!";
         igor.music();
-        igor.song();
+        igor.song(song);
         igor.music();
-        igor.song();
+        igor.song(song);
         igor.music();
-        igor.song();
+        igor.song(song);
     }
 }
