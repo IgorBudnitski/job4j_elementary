@@ -5,12 +5,13 @@ public class ShopDrop {
         if (index == products.length - 1) {
             products[index] = null;
             return products;
+        } else {
+            for (int u = index + 1; u < products.length; u++) {
+                products[index] = products[u];
+                products[u] = null;
+                index++;
+            }
+            return products;
         }
-        for (int u = index + 1; u < products.length; u++) {
-            products[index] = products[u];
-            products[u] = null;
-            index++;
-        }
-        return products;
     }
 }
